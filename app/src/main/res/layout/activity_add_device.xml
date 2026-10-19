@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Dispositivo IoT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1F2937" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vincula un nuevo nodo ESP32 a la red Mesh"
+        android:textColor="#6B7280"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Nodo"
+        android:textStyle="bold"
+        android:textColor="#374151"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/etNombreNodo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ej: Sector Parcela 1"
+        android:background="@android:drawable/editbox_background"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección MAC (ESP32)"
+        android:textStyle="bold"
+        android:textColor="#374151"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/etMacNodo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ej: AA:BB:CC:11:22:33"
+        android:background="@android:drawable/editbox_background"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnGuardarNodo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Guardar Nodo"
+        android:textStyle="bold"
+        app:cornerRadius="12dp" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Volver"
+        android:textColor="#6B7280"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+</LinearLayout>
